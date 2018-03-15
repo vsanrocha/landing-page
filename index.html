@@ -30,17 +30,20 @@
 				<h2>Compre agora!</h2>
 				<p>Preencha os campos abaixo e garanta já o seu!</p>
 			</div>
+			<div class="errorMsg" data-js="errorMsg">
+				<p></p>
+			</div>
 			<section>
 				<div class="field">
 					<label for="name">Nome*</label>
-					<input type="text" name="name" data-inputName="name">
+					<input type="text" name="name" data-js="name" formnovalidate>
 				</div>
-				<div class="filed">
+				<div class="field">
 					<label for="email">Email*</label>
-					<input type="text" name="email" data-inputEmail="email">
+					<input type="text" name="email" data-js="email" formnovalidate>
 				</div>
 				<div>
-					<button type="submit" class="call_btn">QUERO COMPRAR AGORA</button>
+					<input type="submit" class="call_btn" data-js="btnCTA" value="QUERO COMPRAR AGORA">
 				</div>
 				<div class="form_spam"><p>Não se preucupe não enviamos spam!</p></div>
 			</section>
