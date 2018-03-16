@@ -2,54 +2,62 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<title>Relógios Watch</title>
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="logo">
-			<p><img src="http://www.prodym.com/image/logo_watchcity.png" alt="watch logo"></p>
+			<img src="assets/img/logo_watch.png" alt="watch logo" class="img-fluid">
 		</div>
 	</header>
 	<div class="title">
 		<h1>PROMOÇÃO EM TODO O NOSSO ESTOQUE!</h1>
 	</div>
-	<div class="wrapper">
-		<div class="content_box">
-			<div class="text_content">
-				<div>
-					<h2>Mas corra porque é por tempo limitado!</h2>
-					<h3>A promoção irá acabar em: </h3>	
-					 <p data-js="countDown"></p>				
-					<img src="https://farm5.staticflickr.com/4781/40752891302_0e59c632da_o.jpg" alt="tres relógios da marca watch">
-				</div>
-			</div>
-		</div>	
-		<div class="form_box">
-			<div class="form_header">
-				<h2>Compre agora!</h2>
-				<p>Preencha os campos abaixo e garanta já o seu!</p>
-			</div>
-			<div class="errorMsg" data-js="errorMsg">
-				<p></p>
-			</div>
-			<section>
-				<div class="field">
-					<label for="name">Nome*</label>
-					<input type="text" name="name" data-js="name" formnovalidate>
-				</div>
-				<div class="field">
-					<label for="email">Email*</label>
-					<input type="text" name="email" data-js="email" formnovalidate>
-				</div>
-				<div>
-					<input type="submit" class="call_btn" data-js="btnCTA" value="QUERO COMPRAR AGORA">
-				</div>
-				<div class="form_spam"><p>Não se preucupe não enviamos spam!</p></div>
-			</section>
-		</div>
-	</div>
-	<script src="countDown.js"></script>
-	<script src="form.js"></script>
+  <div class="content container">
+  	<div class="row">
+  		<div class="col-lg-7 col-md-7 col-sm-12 text-box">
+  			<div class="text-content">
+  				<div>
+  					<h2>Mas corra porque é por tempo limitado!</h2>
+  					<h3>A promoção irá acabar em: </h3>
+            <div class="countDown">
+  					 <p data-js="countDown"></p>
+            </div>
+  					<img src="assets/img/watches.jpg" alt="tres relógios da marca watch" class="img-fluid">
+  				</div>
+  			</div>
+  		</div>
+  		<div class="col-lg-4 col-md-4 col-sm-12 form-box">
+  			<div class="form-header">
+  				<h2>Compre agora!</h2>
+  				<p>Preencha os campos abaixo e garanta já o seu!</p>
+  			</div>
+  			<div class="errorMsg" data-js="errorMsg">
+  				<p></p>
+  			</div>
+  			<section>
+  				<div class="field">
+  					<label for="name">Nome*</label>
+  					<input type="text" name="name" data-js="name" formnovalidate>
+  				</div>
+  				<div class="field">
+  					<label for="email">Email*</label>
+  					<input type="email" name="email" data-js="email" formnovalidate>
+  				</div>
+  				<div>
+  					<input type="submit" class="call-btn" data-js="btnCTA" value="QUERO COMPRAR AGORA">
+  				</div>
+  				<div class="form-spam"><p>Não se preucupe não enviamos spam!</p></div>
+  			</section>
+  		</div>
+  	</div>
+  </div>
+	<script src="assets/js/countDown.js"></script>
+	<script src="assets/js/form.js"></script>
 </body>
 </html>
