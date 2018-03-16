@@ -1,5 +1,22 @@
 {
-  "name": "",
-  "version": "",
-  "description": "O melhores modelos de relógios"
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "node node_modules/http-server/bin/http-server -p 8081"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vsanrocha/landing-page"
+  },
+  "author": "Vinicius Santana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vsanrocha/landing-page/issues"
+  },
+  "homepage": "https://github.com/vsanrocha/landing-page#README",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
